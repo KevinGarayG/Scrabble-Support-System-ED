@@ -77,6 +77,6 @@ El proyecto incluye diagramas de Tipos Abstractos de Datos (TADs) para proporcio
 
 
 ## Autores
-Kevin Garay
-Arley Bernal
-Felipe Garrido
+- Kevin Garay
+- Arley Bernal
+- Felipe Garrido
