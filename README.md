@@ -39,10 +39,18 @@ El programa requiere dos archivos de texto para funcionar:
 ### Comandos del Usuario
 Los usuarios interactúan con el sistema a través de la terminal. Los comandos disponibles son:
 
-- $ ayuda: Muestra una lista de comandos disponibles.
-- $ ayuda nombre_comando: Muestra la descripción de un comando específico.
-- $ salir: Termina la ejecución del programa.
-- $ iniciar_arbol_inverso diccionario.txt: Inicializa el árbol trie inverso con las palabras del diccionario.
+- **$ ayuda:** Muestra una lista de comandos disponibles.
+- **$ ayuda *nombre_comando*:** Muestra la descripción de un comando específico.
+- **$ salir:** Termina la ejecución del programa.
+- **$ inicializar *diccionario.txt:** inicia el diicionario en el idiama del diccionario.txt **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
+- **$ inicializar_inverso *diccionario.txt*:** inicia un ddicionario pero con lñas palabras invertidas. **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
+- **$ puntaje palabra *palabra*:** conocer el puntaje de la palbra ingresada.
+- **$ iniciar_arbol _diccionario.txt_:** Inicializa el árbol trie con las palabras del diccionario. **(necesario para comandos: _palabras_por_prefijo y palabras_por_subfijo_)**
+- **$ iniciar_arbol_inverso _diccionario.txt_:** Inicializa el árbol trie inverso con las palabras del diccionario. **(necesario para comandos:  _palabras_por_prefijo y palabras_por_subfijo_)**
+- **$ palabras_por_prefijo _prefijo_:** Encuantra palabras que tengan el prefijo ingresado por el usuario.
+- **$ palabras_por_sufijo _sufijo_:** Encuantra palabras que tengan el prefijo ingresado por el usuario.
+- **$ grafo_de_palabras:** inicia un grafo que contiene palabras (nodos). Las palabras se conectan si tienen un caracter de diferencia. **(necesario para comandos: _posibles_plabras_)**
+- **$ posibles_palabras _letras_:** encuentra las posibles palabras que puedan armarse con las fichas (caracteres) qu ingrese el jugador. Admite un maximo de un comodin (?).
 
 ## Funcionalidades
 - Inicializar Árbol: Inicializa un árbol trie con palabras del diccionario.
@@ -52,7 +60,7 @@ Los usuarios interactúan con el sistema a través de la terminal. Los comandos 
 ## Diagrama de TADs
 El proyecto incluye diagramas de Tipos Abstractos de Datos (TADs) para proporcionar una visión general de las clases y sus relaciones en el sistema.
 
-##Autores
+## Autores
 Kevin Garay
 Arley Bernal
 Felipe Garrido
