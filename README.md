@@ -73,7 +73,7 @@ Los usuarios interactúan con el sistema a través de la terminal. Los comandos 
 ## Diagrama de TADs
 El proyecto incluye diagramas de Tipos Abstractos de Datos (TADs) para proporcionar una visión general de las clases y sus relaciones en el sistema.
 
-![Diagrama del Sistema](tads.png)
+![Diagrama del Sistema](images/tads.png)
 
 
 ## Autores
