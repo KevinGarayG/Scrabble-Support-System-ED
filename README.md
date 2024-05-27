@@ -40,21 +40,34 @@ El programa requiere dos archivos de texto para funcionar:
 Los usuarios interactúan con el sistema a través de la terminal. Los comandos disponibles son:
 
 - **$ ayuda:** Muestra una lista de comandos disponibles.
+  
 - **$ ayuda *nombre_comando*:** Muestra la descripción de un comando específico.
+  
 - **$ salir:** Termina la ejecución del programa.
-- **$ inicializar *diccionario.txt:** inicia el diicionario en el idiama del diccionario.txt **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
-- **$ inicializar_inverso *diccionario.txt:** inicia un ddicionario pero con lñas palabras invertidas. **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
+  
+- **$ inicializar *diccionario.txt*:** inicia el diicionario en el idiama del diccionario.txt **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
+  
+- **$ inicializar_inverso *diccionario.txt*:** inicia un ddicionario pero con lñas palabras invertidas. **(necesario para comandos: _puntaje, grafo_palabras y posibles_palabras_)**
+  
 - **$ puntaje palabra *palabra*:** conocer el puntaje de la palbra ingresada.
+  
 - **$ iniciar_arbol _diccionario.txt_:** Inicializa el árbol trie con las palabras del diccionario. **(necesario para comandos: _palabras_por_prefijo y palabras_por_subfijo_)**
+  
 - **$ iniciar_arbol_inverso _diccionario.txt_:** Inicializa el árbol trie inverso con las palabras del diccionario. **(necesario para comandos:  _palabras_por_prefijo y palabras_por_subfijo_)**
+  
 - **$ palabras_por_prefijo _prefijo_:** Encuentra palabras que tengan el prefijo ingresado por el usuario.
+  
 - **$ palabras_por_sufijo _sufijo_:** Encuentra palabras que tengan el sufijo ingresado por el usuario.
+  
 - **$ grafo_de_palabras:** inicia un grafo que contiene palabras (nodos). Las palabras se conectan si tienen un caracter de diferencia. **(necesario para comandos: _posibles_plabras_)**
+  
 - **$ posibles_palabras _letras_:** encuentra las posibles palabras que puedan armarse con las fichas (caracteres) que ingrese el jugador. Admite un maximo de un comodin (?).
 
 ## Funcionalidades
 - **Buscar Palabras:** Busca palabras que comienzan con un prefijo o terminan con un sufijo.
+  
 - **Calcular Puntaje:** Calcula el puntaje de una palabra basada en las letras y sus valores.
+  
 - **Posibles palabras:** Encuantra las posibles palabras o combinaciones que se puedan armar con las fichas (cadena de caracteres) ingresada por el usuario.
 
 ## Diagrama de TADs
@@ -63,16 +76,17 @@ El proyecto incluye diagramas de Tipos Abstractos de Datos (TADs) para proporcio
 1. Letra
 Descripción: Almacena información sobre una letra y su puntaje en el juego Scrabble.
 - Atributos:
-•	Letra: Carácter que representa letra de la palabra
-•	Puntos: Un entero que representa el puntaje de cada letra
+	-Letra: Carácter que representa letra de la palabra
+  -Puntos: Un entero que representa el puntaje de cada letra
+  
 - Operaciones:
-•	Letra(): Constructor que inicia la letra con carácter y el puntaje.
-•	Letra (Caracter): Constructor que inicia la letra con un carácter específico y puntaje 0.
-•	FijarLetra(caracter): Muestra el carácter que representa la letra.
-•	ObtenerLetra(): Devuelve el carácter que representa la letra.
-•	FijarPunto(Punto): Establece puntaje a la letra.
-•	ObtenerPunto(punto): Devuelve Puntaje letra.
-•	Operador(letra): Compara letra depende de su carácter.
+  -Letra(): Constructor que inicia la letra con carácter y el puntaje.
+  -Letra (Caracter): Constructor que inicia la letra con un carácter específico y puntaje 0.
+  -FijarLetra(caracter): Muestra el carácter que representa la letra.
+  -ObtenerLetra(): Devuelve el carácter que representa la letra.
+  -FijarPunto(Punto): Establece puntaje a la letra.
+  -ObtenerPunto(punto): Devuelve Puntaje letra.
+  -Operador(letra): Compara letra depende de su carácter.
 
 2. Scrabble
 Descripción: Este ya representa el juego scrabble y gestiona las letras, el diccionario de palabras y realizar operaciones del juego (puntaje, buscar palabras).
